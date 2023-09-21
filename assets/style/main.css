@@ -1,0 +1,49 @@
+/* Main Settings */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #e1a761;
+    --white-color: #fff
+}
+
+
+
+
+
+.pincelImage {
+    margin-left: auto;
+    margin-right: 0 !important;
+    display: block;
+}
+.qrCode {
+    width: 100%;
+}
+
+.cusLink{
+    color: #818181;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.profileDiv {
+    margin-bottom: 50px;
+}
+.profile {
+    margin-right: 20px;
+}
+
+.history {
+    margin-bottom: 10px;
+}
+
+.iconBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background: #33bba3;
+    color: var(--white-color);
+    font-size: 22px;
+    margin-right: 20px;
+}

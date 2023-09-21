@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    <div style="display: none" id="pageTitle">exams</div>
+
+    <%- include('./partials/navbar.ejs') %>
+
+    <div class="block">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <p class="title is-4 has-text-weight-bold">Exams</p>
+                    <p class="title is-4 has-text-weight-bold">No Exams Yet</p>
+                    <div class="box customBox">
+                        <div class="box-title is-flex is-justify-content-space-between" onclick="toggleContent(this)">
+                            <h3 class="is-size-4 has-text-weight-bold">Exam</h3>
+                            <i class="fas fa-chevron-down is-size-4"></i>
+                        </div>
+                        <div class="box-content is-hidden">
+                            <p class="is-size-6">This is the content of the box.</p>
+                            <button class="button is-theme">Take Exam</button>
+                        </div>
+                    </div>
+
+                    <div class="box customBox">
+                        <div class="box-title is-flex is-justify-content-space-between" onclick="toggleContent(this)">
+                            <h3 class="is-size-4 has-text-weight-bold">Box Title</h3>
+                            <i class="fas fa-chevron-down is-size-4"></i>
+                        </div>
+                        <div class="box-content is-hidden">
+                            <p>This is the content of the box.</p>
+                        </div>
+                    </div>
+
+                    <div class="box customBox">
+                        <div class="box-title is-flex is-justify-content-space-between" onclick="toggleContent(this)">
+                            <h3 class="is-size-4 has-text-weight-bold">Box Title</h3>
+                            <i class="fas fa-chevron-down is-size-4"></i>
+                        </div>
+                        <div class="box-content is-hidden">
+                            <p>This is the content of the box.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column is-6">
+                    <img src="/images/pincelStudy.png" class="pincelImage" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src='/js/main.js'></script>
+
+<script>
+    function toggleContent(element) {
+        const contentDiv = element.nextElementSibling;
+        contentDiv.classList.toggle('is-hidden')
+    
+        const icon = element.querySelector('i');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+    }
+</script>

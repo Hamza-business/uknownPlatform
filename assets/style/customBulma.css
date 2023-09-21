@@ -1,0 +1,78 @@
+.button.is-theme {
+    background-color: var(--main-color);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-theme.is-hovered, .button.is-theme:hover {
+    background-color: var(--main-color);
+    border-color: transparent;
+    color: #fff
+}
+.button.is-theme.is-focused:not(:active), .button.is-theme:focus:not(:active) {
+    box-shadow: 0 0 0 .125em rgba(252, 218, 0, 0.659);
+}
+.button.is-theme.is-active, .button.is-theme:active {
+    background-color: var(--main-color);
+    border-color: transparent;
+}
+.button.is-theme.is-outlined {
+    background-color: transparent;
+    border-color: var(--main-color);
+    color: var(--main-color);
+    transition: 0.5s background-color, 0.5s color;
+}
+.button.is-theme.is-outlined:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--white-color)
+}
+
+
+.has-text-theme {
+    color: var(--main-color) !important;
+}
+
+
+.button{
+    border-radius: 20px;
+    font-weight: 600;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.navbar-item {
+    font-weight: 600;
+}
+.navbar-item.active, .navbar-item:hover {
+    color: var(--main-color) !important;
+}
+.navbar .container {
+    border-bottom: 2px solid #595959;
+    padding: 0 20px;
+}
+
+
+.box {
+    border-radius: 20px;
+}
+
+.columns {
+    margin-top: 0 !important;
+}
+
+.customBox {
+    border-radius: 20px;
+    margin-bottom: 20px
+}
+.customBox .box-title *{
+    color: var(--main-color);
+}
+.customBox .box-content {
+    margin-top: 10px;
+}
+
+
+
+.cusLink{
+    
+}

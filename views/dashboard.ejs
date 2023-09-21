@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+    <div style="display: none" id="pageTitle">dashboard</div>
+
+    <%- include('./partials/navbar.ejs') %>
+
+    <div class="block">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-9">
+                    <div class="is-flex is-align-items-center profileDiv">
+                        <figure class="image is-96x96 is-rounded profile">
+                            <img src="https://bulma.io/images/placeholders/128x128.png" class="is-rounded">
+                        </figure>
+                        <span class="is-size-5 has-text-weight-bold">Hamza Dev</span>
+                    </div>
+                    
+                    <div class="box">
+                        <div class="is-flex is-align-items-center history">
+                            <div class="iconBox">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="has-text-weight-semibold">kjckdi jijijfi jifjijfd if ifdj idji </p>
+                        </div>
+
+                        <div class="is-flex is-align-items-center history">
+                            <div class="iconBox">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="has-text-weight-semibold">kjckdi jijijfi jifjijfd if ifdj idji </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <p>No scores Yet</p>
+                    </div>
+                </div>
+    
+                <div class="column is-3">
+                    <div class="box">
+                        <img src="" alt="qr code image" class="qrCode">
+                        <p class="is-size-6 has-text-centered has-text-weight-bold">6jq0</p>
+                    </div>
+
+                    <div class="box">
+                        <div class="buttons is-centered">
+                            <a href="" class="button is-info">Facebook Group</a>
+                            <a href="" class="button is-info">Homework upload</a>
+                        </div>
+                    </div>
+
+                    <div class="has-text-centered is-centered">
+                        <a href="" class="cusLink">Privacy Policy</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script src='/js/main.js'></script>
+
+<script>
+    function toggleContent(element) {
+        const contentDiv = element.nextElementSibling;
+        contentDiv.classList.toggle('is-hidden')
+    
+        const icon = element.querySelector('i');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+    }
+</script>
